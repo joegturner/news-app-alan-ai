@@ -1,0 +1,41 @@
+.footer {
+  height: 8rem;
+  width: 100%;
+  background-color: darkblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > p {
+    font-size: 2rem;
+    color: white;
+  }
+
+  & > a {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.1rem 1rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: aqua;
+      color: black;
+      box-shadow: 0 1rem 2rem rgba(black, 0.15);
+      transform: translateY(-2px);
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+      transform: translateY(0);
+    }
+  }
+
+  &__logo {
+    height: 4.5rem;
+  }
+}
